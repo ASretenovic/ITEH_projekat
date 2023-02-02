@@ -6,6 +6,7 @@ import tourData from '../assets/data/tours.js'
 import calculateAvgRating from '../utils/avgRating'
 import avatar from '../assets/images/avatar.jpg'
 import Booking from '../components/Booking/Booking'
+import Newsletter from '../shared/Newsletter';
 
 
 const TourDetails = () => {
@@ -53,7 +54,7 @@ const TourDetails = () => {
                   <div className='d-flex align-items-center gap-5'>
 
                     <span className='tour__rating d-flex align-items-center gap-1'>
-                      <i class="ri-star-fill" style={{
+                      <i className="ri-star-fill" style={{
                         'color': "var(--secondary-color)"
                       }}></i> {avgRating === 0 ? null : avgRating}
                       {totalRating === 0 ? 'Nema recenzija' : <span>({reviews?.length})</span>}
@@ -61,21 +62,21 @@ const TourDetails = () => {
                     </span>
 
                     <span>
-                      <i class="ri-map-pin-fill"></i>
+                      <i className="ri-map-pin-fill"></i>
                       {address}
                     </span>
 
                     <div className="tour__extra-details">
                       <span>
-                        <i class="ri-map-pin-2-line"></i> {city}
+                        <i className="ri-map-pin-2-line"></i> {city}
                       </span>
                       <span>
-                        <i class="ri-money-dollar-circle-line"></i> ${price} po osobi
+                        <i className="ri-money-dollar-circle-line"></i> ${price} po osobi
                       </span>
                       <span>
-                      <i class="ri-map-pin-time-line"></i> {distance} km
+                      <i className="ri-map-pin-time-line"></i> {distance} km
                       </span>
-                      <span><i class="ri-group-line"></i> Broj osoba:{maxGroupSize}
+                      <span><i className="ri-group-line"></i> Broj osoba:{maxGroupSize}
                       </span>
                     </div>
                     
@@ -88,11 +89,11 @@ const TourDetails = () => {
                     <h4>Recenzije (broj recenzija: {reviews?.length})</h4>
                     <Form onSubmit={submitHandler}>
                       <div className='d-flex align-items-center gap-3 mb-4 rating__group'>
-                        <span onClick={()=>setTourRating(1)}>1 <i class="ri-star-s-fill"></i></span>
-                        <span onClick={()=>setTourRating(2)}>2 <i class="ri-star-s-fill"></i></span>
-                        <span onClick={()=>setTourRating(3)}>3 <i class="ri-star-s-fill"></i></span>
-                        <span onClick={()=>setTourRating(4)}>4 <i class="ri-star-s-fill"></i></span>
-                        <span onClick={()=>setTourRating(5)}>5 <i class="ri-star-s-fill"></i></span>
+                        <span onClick={()=>setTourRating(1)}>1 <i className="ri-star-s-fill"></i></span>
+                        <span onClick={()=>setTourRating(2)}>2 <i className="ri-star-s-fill"></i></span>
+                        <span onClick={()=>setTourRating(3)}>3 <i className="ri-star-s-fill"></i></span>
+                        <span onClick={()=>setTourRating(4)}>4 <i className="ri-star-s-fill"></i></span>
+                        <span onClick={()=>setTourRating(5)}>5 <i className="ri-star-s-fill"></i></span>
                       </div>
 
                       <div className="review__input">
@@ -117,7 +118,7 @@ const TourDetails = () => {
                                   <p>{new Date('01-18-2023').toLocaleDateString('en-US', options)}</p>
                                 </div>
                                 <span className='d-flex align-items-center'>
-                                  5<i class="ri-star-s-fill"></i>
+                                  5<i className="ri-star-s-fill"></i>
                                 </span>
                               </div>
 
@@ -142,6 +143,9 @@ const TourDetails = () => {
           </Row>
         </Container>
       </section>
+      
+      <Newsletter/>
+
 
     </>
   )
