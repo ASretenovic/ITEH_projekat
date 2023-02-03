@@ -50,7 +50,7 @@ export const getTour = async(req, res)=>{
     const id = req.params.id;
     try {
 
-        const tour = await Tour.findById(id);
+        const tour = await Tour.findById(id).populate('reviews');
 
     res.status(200).json({success:true, message:'Successfully got a tour', data:tour});
         
@@ -68,7 +68,7 @@ export const getAllTour = async(req, res)=>{
 
     try {
 
-        const tours = await Tour.find({}).skip(page * 8).limit(8);
+        const tours = await Tour.find({}).populate('reviews').skip(page * 8).limit(8);
         res.status(200).json({
             success:true, count:tours.length, message:'Successfully returned all tours', data:tours
         });
@@ -87,7 +87,7 @@ export const getTourBySearch = async(req, res)=>{
 
     try {
         const tours = await Tour.find({city, distance:{$gte:distance}, 
-        maxGroupSize:{$gte:maxGroupSize}})
+        maxGroupSize:{$gte:maxGroupSize}}).populate('reviews')
 
         res.status(200).json({
             success:true, message:'Successfully', data:tours
@@ -105,7 +105,7 @@ export const getFeaturedTour = async(req, res)=>{
 
         const tours = await Tour.find({
             featured:true
-        }).limit(8);
+        }).populate('reviews').limit(8);
         res.status(200).json({
             success:true, count:tours.length, message:'Successfully', data:tours
         });
