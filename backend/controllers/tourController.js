@@ -100,7 +100,7 @@ export const getTourBySearch = async(req, res)=>{
 
 // get featured tour
 
-export const getFeaturedTour = async(req, res)=>{
+export const getFeaturedTours = async(req, res)=>{
     try {
 
         const tours = await Tour.find({

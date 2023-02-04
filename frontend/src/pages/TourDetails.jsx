@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react'
+import React, {useEffect, useRef, useState, useContext} from 'react'
 import '../styles/tour-details.css'
 import { Container, Row, Col, Form, ListGroup } from 'reactstrap'
 import { useParams } from 'react-router-dom'
@@ -7,15 +7,21 @@ import calculateAvgRating from '../utils/avgRating'
 import avatar from '../assets/images/avatar.jpg'
 import Booking from '../components/Booking/Booking'
 import Newsletter from '../shared/Newsletter';
+import useFetch from '../hooks/useFetch';
+import { BASE_URL } from '../utils/config';
+import { AuthContext } from '../context/AuthContext';
+
 
 
 const TourDetails = () => {
 
   const { id } = useParams();
   const reviewMsgRef = useRef('');
-  const [tourRating, setTourRating]=useState(null);
-  //this is a static data, later we'll call our API na dload our data from the database
-  const tour = tourData.find(tour => tour.id === id);
+  const [tourRating, setTourRating] = useState(null);
+  const { user } = useContext(AuthContext);
+  
+  // fetch data from database
+  const { data: tour,loading,error } = useFetch(`${BASE_URL}/tours/${id}`);
 
 
   //destructure properties from tour object
@@ -30,20 +36,60 @@ const TourDetails = () => {
 
   //submit request to the server
 
-  const submitHandler = e=>{
+  const submitHandler = async e=>{
     e.preventDefault();
     const reviewText = reviewMsgRef.current.value;
 
     // alert(`${reviewText}, ${tourRating}`);
     //later will call our api
+
+    try {
+
+      if (!user || user === undefined || user === null) {
+        alert('Prijavite se');
+      }
+
+      const reviewObj = {
+        username: user?.username,
+        reviewText,
+        rating:tourRating
+      }
+      
+      const res = await fetch(`${BASE_URL}/review/${id}`, {
+        method: 'post',
+        headers: {
+          'content-type': 'application/json'
+        },
+        credentials: 'include',
+        body: JSON.stringify(reviewObj)
+      })
+
+      const result = await res.json();
+      
+      if (!res.ok) {
+        return alert(result.message);
+      }
+
+      alert('review submitted');
+      alert(result.message);
+    } catch (err) {
+      alert(err.message)
+    }
   }
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [tour]);
 
   return (
     <>
       <section>
         <Container>
-          <Row>
+          {loading && <h4 className='text-center pt-5'>Loading........</h4>}
+          {error && <h4 className='text-center pt-5'>{error}</h4>}
+
+          {
+            !loading && !error && <Row>
             <Col lg='8'>
               <div className="tour__content">
                 <img src={photo} alt="" />
@@ -114,15 +160,15 @@ const TourDetails = () => {
                               <div className='d-flex align-items-center
                             justify-content-between'>
                                 <div>
-                                  <h5>Nevena</h5>
-                                  <p>{new Date('01-18-2023').toLocaleDateString('en-US', options)}</p>
+                                  <h5>{review.username}</h5>
+                                  <p>{new Date(review.createdAt).toLocaleDateString('en-US', options)}</p>
                                 </div>
                                 <span className='d-flex align-items-center'>
-                                  5<i className="ri-star-s-fill"></i>
+                                  {review.rating}<i className="ri-star-s-fill"></i>
                                 </span>
                               </div>
 
-                              <h6>Super tura</h6>
+                              <h6>{review.reviewText}</h6>
                             </div>
 
                           </div>
@@ -141,6 +187,7 @@ const TourDetails = () => {
                 <Booking tour={tour} avgRating = {avgRating}/>
             </Col>
           </Row>
+          }
         </Container>
       </section>
       

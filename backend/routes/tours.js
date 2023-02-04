@@ -1,5 +1,5 @@
 import express from 'express'
-import { createTour, updateTour, deleteTour, getTour, getAllTour, getTourBySearch, getFeaturedTour, getTourCount } from '../controllers/tourController.js'
+import { createTour, updateTour, deleteTour, getTour, getAllTour, getTourBySearch, getTourCount, getFeaturedTours } from '../controllers/tourController.js'
 import { verifyAdmin } from '../utils/verifyToken.js';
 
 const router = express.Router()
@@ -22,7 +22,7 @@ router.get("/", getAllTour);
 
 //get tours by search
 router.get("/search/getTourBySearch", getTourBySearch);
-router.get("/search/getFeaturedTour", getFeaturedTour);
+router.get("/search/getFeaturedTours", getFeaturedTours);
 router.get("/search/getTourCount", getTourCount);
 
 

@@ -48,10 +48,10 @@ const Footer = () => {
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, sapiente.</p>
 
             <div className="social__links d-flex align-items-center gap-4">
-              <span><Link to='#'><i class="ri-facebook-circle-line"></i></Link></span>
-              <span><Link to='#'><i class="ri-instagram-line"></i></Link></span>
-              <span><Link to='#'><i class="ri-twitter-line"></i></Link></span>
-              <span><Link to='#'><i class="ri-youtube-line"></i></Link></span>
+              <span><Link to='#'><i className="ri-facebook-circle-line"></i></Link></span>
+              <span><Link to='#'><i className="ri-instagram-line"></i></Link></span>
+              <span><Link to='#'><i className="ri-twitter-line"></i></Link></span>
+              <span><Link to='#'><i className="ri-youtube-line"></i></Link></span>
               
             </div>
           </div>
@@ -88,21 +88,21 @@ const Footer = () => {
           <ListGroup className='footer__quick-links'>
             <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
               <h6 className='mb-0 d-flex align-items-center gap-2'>
-                <span><i class="ri-map-pin-line"></i></span>Adresa
+                <span><i className="ri-map-pin-line"></i></span>Adresa
               </h6>
               <p className='mb-0'>Rudnička 7, Valjevo</p>
             </ListGroupItem>
 
             <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
               <h6 className='mb-0 d-flex align-items-center gap-2'>
-                <span><i class="ri-mail-line"></i></span>Email
+                <span><i className="ri-mail-line"></i></span>Email
               </h6>
               <p className='mb-0'>world.travel@gmail.com</p>
             </ListGroupItem>
 
             <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
               <h6 className='mb-0 d-flex align-items-center gap-2'>
-                <span> <i class="ri-phone-line"></i></span>Telefon
+                <span> <i className="ri-phone-line"></i></span>Telefon
               </h6>
               <p className='mb-0'>014/730-731</p>
             </ListGroupItem>

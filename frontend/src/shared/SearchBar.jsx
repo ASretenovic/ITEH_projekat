@@ -1,6 +1,8 @@
 import React,{useRef} from 'react';
 import './search-bar.css';
 import { Col, Form, FormGroup } from 'reactstrap';
+import { BASE_URL } from '../utils/config';
+import { useNavigate } from 'react-router-dom';
 
 const SearchBar = () => {
 
@@ -8,16 +10,33 @@ const SearchBar = () => {
     const locationRef = useRef('');
     const distanceRef = useRef(0);
     const maxGroupSizeRef = useRef(0);
+    const navigate = useNavigate();
 
-    const searchHandler = () => {
+    const searchHandler = async() => {
         const location = locationRef.current.value;
         const distance = distanceRef.current.value;
         const maxGroupSize = maxGroupSizeRef.current.value;
 
+        //console.log(location);
+
         if (location === '' || distance === '' || maxGroupSize === '') {
             return alert('Sva polja su obavezna!');
         }
-    }
+
+        const res = await fetch(`${BASE_URL}/tours/search/getTourBySearch?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`);
+        //console.log(res);
+        
+        if (!res.ok) {
+            alert('Something went wrong');
+        }
+
+        const result = await res.json();
+
+        //console.log(SearchBar)
+        console.log(result.data)
+        navigate(`/tours/search/?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`,
+            { state: result.data });
+    };
 
   return (
       <Col lg='12'>
