@@ -86,8 +86,8 @@ export const getTourBySearch = async(req, res)=>{
     const maxGroupSize = parseInt(req.query.maxGroupSize);
 
     try {
-        const tours = await Tour.find({city, distance:{$gte:distance}, 
-        maxGroupSize:{$gte:maxGroupSize}}).populate('reviews')
+        const tours = await Tour.find({city, distance:{$lte:distance}, 
+        maxGroupSize:{$lte:maxGroupSize}}).populate('reviews')
 
         res.status(200).json({
             success:true, message:'Successfully', data:tours
@@ -96,6 +96,25 @@ export const getTourBySearch = async(req, res)=>{
         res.status(404).json({success:false, message:'Not found'});
     }
 };
+
+
+// export const getTourBySearch = async(req, res)=>{
+//     const address = new RegExp(req.query.address, 'i'); //i means case sensitive
+//     const distance = parseInt(req.query.distance);
+//     const maxGroupSize = parseInt(req.query.maxGroupSize);
+
+//     try {
+//         const tours = await Tour.find({address, distance:{$lte:distance}, 
+//         maxGroupSize:{$lte:maxGroupSize}}).populate('reviews')
+
+//         res.status(200).json({
+//             success:true, message:'Successfully', data:tours
+//         });
+//     } catch (err) {
+//         res.status(404).json({success:false, message:'Not found'});
+//     }
+// };
+
 
 
 // get featured tour

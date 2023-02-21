@@ -1,0 +1,235 @@
+[{
+  "_id": {
+    "$oid": "63de6625dc7b63ef5c44fe72"
+  },
+  "username": "jovana",
+  "reviewText": "Putovanje mog života!",
+  "rating": 4,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675519525146"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675519525146"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e27164da9a76812ce638fa"
+  },
+  "username": "nevena",
+  "reviewText": "Nezaboravno iskustvo i sjajno društvo.",
+  "rating": 4,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675784548339"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675784548339"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e27350a9c86b7d9c31b832"
+  },
+  "username": "nevena",
+  "reviewText": "Prelepi prizori",
+  "rating": 4,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675785040443"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675785040443"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ebc83a22533ac7488b8d2d"
+  },
+  "username": "nevena",
+  "reviewText": "Fenomenalno do imbecilnosti.",
+  "rating": 5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676396602411"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676396602411"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ee72061cb07e25fdfdb7a1"
+  },
+  "username": "jovana",
+  "reviewText": "Neverovatno iskustvo!",
+  "rating": 5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676571142983"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676571142983"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ef5f425581b0a29c0713d2"
+  },
+  "username": "jovana",
+  "reviewText": "Ovo putovanje ću sigurno ponoviti!",
+  "rating": 5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676631874161"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676631874161"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ef5f6c5581b0a29c0713e1"
+  },
+  "username": "jovana",
+  "reviewText": "Prelepa zemlja",
+  "rating": 4,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676631916679"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676631916679"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ef5fd95581b0a29c0713f2"
+  },
+  "username": "jovana",
+  "reviewText": "Divan grad!",
+  "rating": 5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676632025533"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676632025533"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ef600c5581b0a29c071403"
+  },
+  "username": "jovana",
+  "reviewText": "Divno putovanje!",
+  "rating": 4,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676632076101"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676632076101"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ef60655581b0a29c071432"
+  },
+  "username": "ana",
+  "reviewText": "Neverovatno iskustvo!",
+  "rating": 4,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676632165701"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676632165701"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ef60865581b0a29c071447"
+  },
+  "username": "ana",
+  "reviewText": "Prelepo!",
+  "rating": 5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676632198788"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676632198788"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ef9e303dcc43d5fd46f8d7"
+  },
+  "username": "ana",
+  "reviewText": "Nezaboravno iskustvo!!",
+  "rating": 5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676647984803"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676647984803"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f094b9534db57c613fb5d0"
+  },
+  "username": "sladjana",
+  "reviewText": "Divna zemlja!",
+  "rating": 5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676711097904"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676711097904"
+    }
+  },
+  "__v": 0
+}]

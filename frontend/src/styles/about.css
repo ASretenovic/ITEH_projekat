@@ -1,0 +1,45 @@
+.about{
+    margin-left: 20px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.about1{
+    margin-left: 80px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.about-col{
+text-align: left;
+font-size: 25px;
+}
+
+.about-col1{
+    text-align: left;
+    font-size: 25px;
+}
+
+.row1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.row2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about img{
+    width: 80%;
+    height: 90%;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.about1-img{
+    width: 80%;
+    height: 80%;
+    margin-top: 15%;
+    border-radius: 15px;
+}

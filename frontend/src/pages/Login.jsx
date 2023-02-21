@@ -7,6 +7,7 @@ import loginImg from '../assets/images/login.png'
 import userIcon from '../assets/images/user.png'
 import { AuthContext } from '../context/AuthContext';
 import { BASE_URL } from '../utils/config';
+import {Popup} from '../components/Popup/Popup.js';
 
 
 const Login = () => {
@@ -16,6 +17,9 @@ const Login = () => {
     email:undefined,
     password:undefined
   });
+  const [open, setOpen] = useState(false);
+
+
   
   const { dispatch } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -44,14 +48,15 @@ const Login = () => {
       const result = await res.json();
       
       if (!res.ok) {
-        alert(result.message);
+        // alert("Neispravni podaci za prijavu.");
+        setOpen(true);
+      } else {
+        console.log(result.data);
+
+        dispatch({ type: 'LOGIN_SUCCESS', payload:result.data });
+        console.log(result.data)
+        navigate('/');
       }
-
-      console.log(result.data);
-
-      dispatch({ type: 'LOGIN_SUCCESS', payload:result.data });
-      //console.log(result.data)
-      navigate('/');
 
     } catch (err) {
       dispatch({ type: 'LOGIN_FAILURE',payload:err.message });
@@ -82,6 +87,7 @@ const Login = () => {
                     <input type="password" placeholder='Password' required id="password" onChange={handleChange} />
                   </FormGroup>
                   <Button className='btn secondary__btn auth__btn' type='submit'>Prijavi se</Button>
+                  {open ? <Popup text="Neispravni podaci!" closePopup={() => setOpen(false)} /> : null}
                 </Form>
                 <p>Nemate nalog? <Link to='/register'>Registrujte se!</Link></p>
               </div>

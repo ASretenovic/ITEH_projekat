@@ -7,6 +7,7 @@ import registerImg from '../assets/images/register.png';
 import userIcon from '../assets/images/user.png';
 import { AuthContext } from '../context/AuthContext';
 import { BASE_URL } from '../utils/config';
+import {Popup} from '../components/Popup/Popup.js';
 
 
 const Register = () => {
@@ -17,6 +18,7 @@ const Register = () => {
     email:undefined,
     password:undefined
   });
+  const [open, setOpen] = useState(false);
   
   const { dispatch } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -42,7 +44,8 @@ const Register = () => {
       const result = await res.json();
 
       if (!res.ok) {
-        alert(result.message);
+        // alert(result.message);
+        setOpen(true);
       }
 
       dispatch({ type: 'REGISTER_SUCCESS' });
@@ -80,6 +83,7 @@ const Register = () => {
                     <input type="password" placeholder='Šifra' required id="password" onChange={handleChange} />
                   </FormGroup>
                   <Button className='btn secondary__btn auth__btn' type='submit'>Kreiraj nalog</Button>
+                  {open ? <Popup text="Neispravni podaci!" closePopup={() => setOpen(false)} /> : null}
                 </Form>
                 <p>Već imate nalog? <Link to='/login'>Prijavi se!</Link></p>
               </div>

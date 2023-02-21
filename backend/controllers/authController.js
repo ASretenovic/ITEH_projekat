@@ -16,6 +16,7 @@ export const register = async(req, res)=>{
             username: req.body.username,
             email: req.body.email,
             password: hash,
+            role: req.body.role,
             photo: req.body.photo
         });
 
@@ -24,7 +25,7 @@ export const register = async(req, res)=>{
         res.status(200).json({success: true, message: "Successfully registered the user"});
         
     } catch (err) {
-        res.status(200).json({success: false, message: "Failed to register the user. Try again"});
+        res.status(500).json({success: false, message: "Failed to register the user. Try again"});
     }
 }
 

@@ -16,8 +16,7 @@ const Newsletter = () => {
                             <button className='btn newsletter__btn'>Prijavite se</button>
                         </div>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum distinctio, voluptas consequuntur labore dolore minus.
-                            Ratione vel distinctio illo quae aut aperiam amet quam nostrum cupiditate reiciendis! Fugit, nobis?</p>
+                        <p>Prijavite se na naš newsletter i dobijaćete obaveštenja o svakoj novosti u našoj agenciji!</p>
                     </div>
                 </Col>
 

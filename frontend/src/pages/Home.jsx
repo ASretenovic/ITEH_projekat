@@ -27,8 +27,8 @@ const Home = () => {
               </div>
               <h1>Putovanja su način da stvorite nezaboravna <span className="highlight">sećanja!</span></h1>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium, nobis obcaecati repudiandae neque aliquam modi necessitatibus.
-                Natus ipsa repudiandae assumenda, tempore consequatur modi dolores impedit! Rem sapiente at blanditiis.
+              Ako tražite partnera za putovanje, došli ste na pravu adresu! <br />
+              Uživajte u našim destinacijama širom sveta!
               </p>
             </div>
           </Col>
@@ -61,8 +61,7 @@ const Home = () => {
       <Container>
         <Row>
           <Col lg='3'>
-            <h5 className='services__subtitle'>Naša ponuda</h5>
-            <h2 className='services__title'>Naše najbolje usluge</h2>
+            <h5 className='services__subtitle'>Vremenska prognoza</h5>
           </Col>
 
 
@@ -96,7 +95,7 @@ const Home = () => {
             <Subtitle subtitle={'Iskustvo'} />
             <h2>Naše bogato iskustvo <br/> garantuje Vaše zadovoljstvo</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>In quos vero dolorem atque fugiat sed necessitatibus.
+            Putujte sa nama širom sveta! <br/> Nisu nam potrebne reči, naša dela govore sama za sebe!
             </p>
             </div>
 

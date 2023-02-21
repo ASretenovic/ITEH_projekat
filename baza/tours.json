@@ -1,0 +1,262 @@
+[{
+  "_id": {
+    "$oid": "63dd2261ee3c1212808eb757"
+  },
+  "title": "Planine Kon So, Tajland",
+  "city": "Bangkok",
+  "address": "Tajland",
+  "distance": 8000,
+  "price": 289,
+  "maxGroupSize": 8,
+  "desc": "Uživajte u tajlandskim planinama!",
+  "reviews": [
+    {
+      "$oid": "63ef60865581b0a29c071447"
+    }
+  ],
+  "photo": "/tour-images/tour-img03.jpg",
+  "featured": true,
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676632198844"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63dd2261ee3c1212808eb758"
+  },
+  "title": "Izlazak sunca, Tajland",
+  "city": "Phuket",
+  "address": "Tajland",
+  "distance": 8000,
+  "price": 299,
+  "maxGroupSize": 8,
+  "desc": "Upoznajte sve lepote Tajlanda!",
+  "reviews": [
+    {
+      "$oid": "63ee72061cb07e25fdfdb7a1"
+    },
+    {
+      "$oid": "63ef5f425581b0a29c0713d2"
+    }
+  ],
+  "photo": "/tour-images/tour-img04.jpg",
+  "featured": true,
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676631874237"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63dd2261ee3c1212808eb759"
+  },
+  "title": "Nusa Pendia Bali, Indonezija",
+  "city": "Džakarta",
+  "address": "Indonezija",
+  "distance": 5000,
+  "price": 499,
+  "maxGroupSize": 8,
+  "desc": "Provedite svoj odmor na Baliju!",
+  "reviews": [
+    {
+      "$oid": "63ef60655581b0a29c071432"
+    },
+    {
+      "$oid": "63f094b9534db57c613fb5d0"
+    }
+  ],
+  "photo": "/tour-images/tour-img05.jpg",
+  "featured": true,
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676711098012"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63dd2261ee3c1212808eb75a"
+  },
+  "title": "Cvetanje trešnje u proleće",
+  "city": "Tokio",
+  "address": "Kawachi Fuji bašte",
+  "distance": 6000,
+  "price": 249,
+  "maxGroupSize": 8,
+  "desc": "Dočekajte cvetanje trešnje u Japanu!",
+  "reviews": [
+    {
+      "$oid": "63ef5f6c5581b0a29c0713e1"
+    },
+    {
+      "$oid": "63f34e9a2cac58c3834b300a"
+    }
+  ],
+  "photo": "/tour-images/tour-img06.jpg",
+  "featured": true,
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676889754981"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63dd2261ee3c1212808eb75b"
+  },
+  "title": "Ajfelova kula, Francuska",
+  "city": "Pariz",
+  "address": "Četvrt Saint-Lambert",
+  "distance": 500,
+  "price": 99,
+  "maxGroupSize": 8,
+  "desc": "Prošetajte Parizom!",
+  "reviews": [
+    {
+      "$oid": "63dd6ea46db7594b1d34ab1f"
+    },
+    {
+      "$oid": "63dd6efa6db7594b1d34ab23"
+    },
+    {
+      "$oid": "63de6625dc7b63ef5c44fe72"
+    },
+    {
+      "$oid": "63e27164da9a76812ce638fa"
+    },
+    {
+      "$oid": "63e272e012c07e0c76db2f92"
+    },
+    {
+      "$oid": "63e27350a9c86b7d9c31b832"
+    },
+    {
+      "$oid": "63ef5fd95581b0a29c0713f2"
+    }
+  ],
+  "photo": "/tour-images/tour-img07.jpg",
+  "featured": true,
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676632025600"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63dd2261ee3c1212808eb75c"
+  },
+  "title": "Nacionalni park Doi Inthanon",
+  "city": "Kung Pao",
+  "address": "Provincija Čang Mai",
+  "distance": 4000,
+  "price": 319,
+  "maxGroupSize": 8,
+  "desc": "Upoznajte najvišu planinu Tajlanda!",
+  "reviews": [],
+  "photo": "/tour-images/tour-img03.jpg",
+  "featured": true
+},{
+  "_id": {
+    "$oid": "63dd2261ee3c1212808eb75d"
+  },
+  "title": "Jaflong, Bangladeš",
+  "city": "Silhet",
+  "address": "Provincija Silhet",
+  "distance": 3000,
+  "price": 375,
+  "maxGroupSize": 5,
+  "desc": "Provedite odmor u Bangladešu!",
+  "reviews": [],
+  "photo": "/tour-images/tour-img08.jpg",
+  "featured": false
+},{
+  "_id": {
+    "$oid": "63dd2261ee3c1212808eb75e"
+  },
+  "title": "Plaža Cox's Bazar",
+  "city": "Čitagong",
+  "address": "Provincija Čitagong",
+  "distance": 4500,
+  "price": 369,
+  "maxGroupSize": 8,
+  "desc": "Posetite najdužu plažu na svetu!",
+  "reviews": [
+    {
+      "$oid": "63de7e13dc7b63ef5c44fee6"
+    },
+    {
+      "$oid": "63de7f1ddc7b63ef5c44ff0c"
+    },
+    {
+      "$oid": "63de7fcfdc7b63ef5c44ff1d"
+    },
+    {
+      "$oid": "63de7fd6dc7b63ef5c44ff20"
+    },
+    {
+      "$oid": "63de7fdddc7b63ef5c44ff23"
+    },
+    {
+      "$oid": "63ef600c5581b0a29c071403"
+    },
+    {
+      "$oid": "63ef9e303dcc43d5fd46f8d7"
+    }
+  ],
+  "photo": "/tour-images/tour-img09.jpg",
+  "featured": false,
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676647984878"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63e2757856b759bb7a292a72"
+  },
+  "title": "Vestminsterska palata",
+  "city": "London",
+  "address": "London",
+  "distance": 300,
+  "photo": "/tour-images/tour-img01.jpg",
+  "desc": "Uživajte u Londonu!",
+  "price": 199,
+  "maxGroupSize": 10,
+  "reviews": [],
+  "featured": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1675785592431"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1675785592431"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ebc2f322533ac7488b8d21"
+  },
+  "title": "Džakarta, Indonezija",
+  "city": "Džakarta",
+  "address": "Indonezija",
+  "distance": 7000,
+  "photo": "/tour-images/tour-img08.jpg",
+  "desc": "Posetite jedan od najlepših gradova sveta!",
+  "price": 445,
+  "maxGroupSize": 10,
+  "reviews": [],
+  "featured": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676395251035"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676397113793"
+    }
+  },
+  "__v": 0
+}]

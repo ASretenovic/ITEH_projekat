@@ -92,7 +92,7 @@ const Booking = ({ tour, avgRating }) => {
                             required onChange={handleChange} />
                     </FormGroup>
                     <FormGroup>
-                        <input type="number" placeholder='Telefon' id='phone'
+                        <input type="text" placeholder='Telefon' id='phone'
                             required onChange={handleChange} />
                     </FormGroup>
                     <FormGroup className='d-flex align-items-center gap-3'>

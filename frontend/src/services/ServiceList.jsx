@@ -9,18 +9,18 @@ const servicesData = [
     {
         imgUrl: weatherImg,
         title: 'Vremenska prognoza',
-        desc: 'Lorem ipsum dolor sit amet.'
+       
     },
-    {
-        imgUrl: guideImg,
-        title: 'Turistički vodič',
-        desc: 'Lorem ipsum dolor sit amet.'
-    },
-    {
-        imgUrl: customizationImg,
-        title: 'Prilagodi',
-        desc: 'Lorem ipsum dolor sit amet.'
-    }
+    // {
+    //     imgUrl: guideImg,
+    //     title: 'Turistički vodič',
+       
+    // },
+    // {
+    //     imgUrl: customizationImg,
+    //     title: 'Prilagodi',
+        
+    // }
 ]
 
 const ServiceList = () => {
@@ -29,6 +29,7 @@ const ServiceList = () => {
             servicesData.map((item, index) =>
                 <Col lg='3' md='6' sm='12' className='mb-4' key={index}>
                 <ServiceCard item={item}/>
+                
             </Col>)
         }
     </>

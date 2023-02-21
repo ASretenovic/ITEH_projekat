@@ -40,8 +40,7 @@ const Testimonials = () => {
     return <Slider {...settings}>
         <div className="testimonial py-4 px-3">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae sint dolores nesciunt eveniet dolore accusamus assumenda, voluptas
-                dolorum eos aliquam ducimus atque omnis, praesentium vel, doloremque corporis. Iure, quia.
+            Oduševljen sam vašom organizacijom. Siguran sam da ćete biti moj izbor pri svakom narednom putovanju!
             </p>
 
             <div className='d-flex align-items-center gap-4 mt-3'>
@@ -55,8 +54,7 @@ const Testimonials = () => {
 
         <div className="testimonial py-4 px-3">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae sint dolores nesciunt eveniet dolore accusamus assumenda, voluptas
-                dolorum eos aliquam ducimus atque omnis, praesentium vel, doloremque corporis. Iure, quia.
+            Moja ljubav prema putovanju traje od detinjstva. Uz vas je ona još veća!
             </p>
 
             <div className='d-flex align-items-center gap-4 mt-3'>
@@ -70,8 +68,10 @@ const Testimonials = () => {
 
         <div className="testimonial py-4 px-3">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae sint dolores nesciunt eveniet dolore accusamus assumenda, voluptas
-                dolorum eos aliquam ducimus atque omnis, praesentium vel, doloremque corporis. Iure, quia.
+           
+            Svako putovanje je priča za sebe, a iskustvo nezaboravno!
+
+
             </p>
 
             <div className='d-flex align-items-center gap-4 mt-3'>
@@ -85,8 +85,7 @@ const Testimonials = () => {
         
         <div className="testimonial py-4 px-3">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae sint dolores nesciunt eveniet dolore accusamus assumenda, voluptas
-                dolorum eos aliquam ducimus atque omnis, praesentium vel, doloremque corporis. Iure, quia.
+            Obišla sam svet zahvaljujući vama! Vi ste moj verni saputnik!
             </p>
 
             <div className='d-flex align-items-center gap-4 mt-3'>

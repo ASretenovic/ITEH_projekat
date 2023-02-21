@@ -45,7 +45,7 @@ const Footer = () => {
         <Col lg='3'>
           <div className="logo">
             <img src={logo} />
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, sapiente.</p>
+            <p>Zapratite nas i na društvenim mrežama!</p>
 
             <div className="social__links d-flex align-items-center gap-4">
               <span><Link to='#'><i className="ri-facebook-circle-line"></i></Link></span>
